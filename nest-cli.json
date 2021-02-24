@@ -25,6 +25,15 @@
       "compilerOptions": {
         "tsConfigPath": "apps/modulea/tsconfig.app.json"
       }
+    },
+    "liba": {
+      "type": "library",
+      "root": "libs/liba",
+      "entryFile": "index",
+      "sourceRoot": "libs/liba/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/liba/tsconfig.lib.json"
+      }
     }
   }
 }

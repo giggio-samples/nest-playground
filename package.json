@@ -67,7 +67,12 @@
     "coverageDirectory": "./coverage",
     "testEnvironment": "node",
     "roots": [
-      "<rootDir>/apps/"
-    ]
+      "<rootDir>/apps/",
+      "<rootDir>/libs/"
+    ],
+    "moduleNameMapper": {
+      "@app/liba/(.*)": "<rootDir>/libs/liba/src/$1",
+      "@app/liba": "<rootDir>/libs/liba/src"
+    }
   }
 }

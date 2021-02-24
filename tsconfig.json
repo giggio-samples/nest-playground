@@ -11,6 +11,13 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,
-    "paths": {}
+    "paths": {
+      "@app/liba": [
+        "libs/liba/src"
+      ],
+      "@app/liba/*": [
+        "libs/liba/src/*"
+      ]
+    }
   }
 }
