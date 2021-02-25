@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const webpack = require('webpack');
 const { WebpackPnpExternals } = require('webpack-pnp-externals');
-// const { RunScriptWebpackPlugin } = require('run-script-webpack-plugin');
 
 module.exports = function (options) {
   return {
@@ -18,7 +17,6 @@ module.exports = function (options) {
       new webpack.WatchIgnorePlugin({
         paths: [/\.js$/, /\.d\.ts$/],
       }),
-      // new RunScriptWebpackPlugin({ name: options.output.filename }),
     ],
   };
 };
