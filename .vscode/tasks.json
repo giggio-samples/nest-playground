@@ -9,7 +9,7 @@
         "isDefault": true
       },
       "problemMatcher": [],
-      "label": "yarn: build",
+      "label": "npm: build",
       "detail": "nest build"
     },
     {
@@ -20,7 +20,7 @@
         "isDefault": true
       },
       "problemMatcher": [],
-      "label": "yarn: test",
+      "label": "npm: test",
       "detail": "jest"
     }
   ]

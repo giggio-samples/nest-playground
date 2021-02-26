@@ -1,12 +1,11 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const webpack = require('webpack');
-const { WebpackPnpExternals } = require('webpack-pnp-externals');
+const nodeExternals = require('webpack-node-externals');
 
-module.exports = function (options) {
+module.exports = function (options, webpack) {
   return {
     ...options,
     target: 'node',
-    externals: [WebpackPnpExternals()],
+    externals: [nodeExternals()],
     plugins: [
       ...options.plugins,
       new webpack.WatchIgnorePlugin({
